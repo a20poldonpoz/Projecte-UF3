@@ -1,0 +1,76 @@
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    display: flex;
+    width: 80%;
+    height: 80px;
+    letter-spacing: 6px;
+    text-decoration: underline black 2px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.grid{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.header-grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 2px solid #354F52;
+    background-color: #929292;
+    color: white;
+    padding: 30px;
+}
+.incidencia{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 1px solid #354F52;
+    padding: 20px;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+}
+.incidencia:hover{
+    cursor: pointer;
+    background-color: #CAD2C5;
+}
+
+.incidencia.alta{
+    background-color: red;
+    cursor: pointer;
+}

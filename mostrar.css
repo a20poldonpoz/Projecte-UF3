@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    display: flex;
+    width: 80%;
+    height: 80px;
+    letter-spacing: 6px;
+    text-decoration: underline black 2px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.grid{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.header-grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 2px solid #354F52;
+    background-color: #929292;
+    color: white;
+    padding: 30px;
+}
+.incidencia{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 1px solid #354F52;
+    padding: 20px;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+}
+.incidencia:hover{
+    cursor: pointer;
+    background-color: #CAD2C5;
+}
+
+
+.alta{
+    background-color: rgb(255, 154, 154);
+}
+.mitja{
+    background-color: rgb(253, 205, 150);
+}
+.baixa{
+    background-color: rgb(172, 255, 172);
+}
+
+/* ------------------------------- RESPONSIVE ------------------------------- */
+@media screen and (max-width: 800px){
+    .id { grid-area: id;}
+    .dep { grid-area: dep;}
+    .desc { grid-area: desc;}
+    .prioritat { grid-area: prioritat;}
+    .data { grid-area: data;}
+    .tecnic{grid-area: tecnic;}
+    .tipus{grid-area: tipus;}
+    .modificar{grid-area: mod;}
+    .eliminar{grid-area: elim;}
+    
+    .grid span{
+        padding: 5px 10px;
+    }
+
+    .incidencia{
+        display: grid;
+        text-align: left;
+        grid-template-areas:
+        'dep dep dep dep dep dep dep dep dep '
+        'prioritat prioritat prioritat prioritat prioritat prioritat prioritat prioritat prioritat '
+        'data data data data data data data data data '
+        'id id id id id id id id id '
+        'desc desc desc desc desc desc desc desc desc '
+        'tipus . . . . . . . mod'
+        'tecnic . . . . . . . elim';
+    }
+
+    .header-grid{
+        display: grid;
+        grid-gap: 5px;
+        text-align: left;
+        grid-template-areas: 
+        'dep dep dep dep dep dep dep dep dep '
+        'prioritat prioritat prioritat prioritat prioritat prioritat prioritat prioritat prioritat '
+        'data data data data data data data data data '
+        'id id id id id id id id id '
+        'desc desc desc desc desc desc desc desc desc '
+        'tipus . . . . . . . mod'
+        'tecnic . . . . . . . elim';
+    }
+}
