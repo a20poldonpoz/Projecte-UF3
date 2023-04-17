@@ -1,0 +1,145 @@
+/* Formulario */
+.formulari {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    margin: 100px auto;
+   }
+   
+   button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+    color: white;
+   }
+   
+   button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+    color: white;
+   }
+   
+   button:hover{
+    background-color: lightblue;
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+  
+  /* Taula d'incidencias */
+  .grid {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .header-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(7, 1fr);
+    border: 2px solid #354F52;
+    background-color: #929292;
+    color: white;
+    padding: 30px;
+  }
+
+
+  
+  .incidencia {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 1px solid #354F52;
+    padding: 20px;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .incidencia:hover {
+    cursor: pointer;
+    background-color: #CAD2C5;
+  }
+  
+  .incidencia.alta {
+    background-color: red;
+    cursor: pointer;
+  }
+
+  .header-grid1 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid #354F52;
+    background-color: #929292;
+    color: white;
+    padding: 30px;
+  }
+
+  .actuacio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid #354F52;
+    padding: 20px;
+    align-items: center;
+    margin: 5px 0;
+  }
+
+  .actuacio:hover {
+    cursor: pointer;
+    background-color: #CAD2C5;
+  }
+
+  .button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  

@@ -13,14 +13,8 @@
 <h2>Buscar ID de Incidencia</h2>
 <?php
 
-$host = "localhost";
-$usuario = "a20poldonpoz_bd";
-$contrasenia = "Pedralbes1";
-$base_de_datos = "a20poldonpoz_GI3PEDRALBES";
-$mysqli = new mysqli($host, $usuario, $contrasenia, $base_de_datos);
-if ($mysqli->connect_errno) {
-    echo "Falló la conexión a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-}
+include ("conexion.php");
+
 $codiI = $_POST["codiI"];
 $sentencia = $mysqli->prepare("SELECT codiI, departament, descripcio, data, prioritat, tecnic, tipologia FROM INCIDENCIA WHERE codiI = ?");
 $sentencia->bind_param("i", $codiI);

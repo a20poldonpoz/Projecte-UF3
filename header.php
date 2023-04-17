@@ -8,7 +8,7 @@
         <li class="nav-item"><a href="index.php" class="nav-link active" aria-current="page">Inici</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="cookies.php" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="register.php" class="nav-link">FAQs</a></li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
       </ul>
 </header>

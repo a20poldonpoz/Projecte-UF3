@@ -14,7 +14,7 @@
 <?php include ("header.php")?>
     <div class="container">
 
-        <h1>Gestio d'incidencies Intitut Pedralbes</h1>
+        <h1>Incidencies Intitut Pedralbes</h1>
 
         <div class="grid">
             <div class="grid-header">
