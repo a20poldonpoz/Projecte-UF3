@@ -1,12 +1,7 @@
 <?php
-$host = "localhost";
-$usuario = "a20poldonpoz_bd";
-$contrasenia = "Pedralbes1";
-$base_de_datos = "a20poldonpoz_GI3PEDRALBES";
-$mysqli = new mysqli($host, $usuario, $contrasenia, $base_de_datos);
-if ($mysqli->connect_errno) {
-    echo "Falló la conexión a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-}
+
+include ("conexion.php");
+
 $tecnic = $_POST["tecnic"];
 $prioritat = $_POST["prioritat"];
 $tipologia = $_POST["tipologia"];
@@ -24,5 +19,5 @@ WHERE codiI=?");
 
 $sentencia->bind_param("ssii",$tipologia, $prioritat, $tecnic, $codiI);
 $sentencia->execute();
-header("Location: index.php");
+header("Location: inici.php");
 ?>

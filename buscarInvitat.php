@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="registrar.css">
 </head>
 <body>
-<?php include ("header.php")?>
+<?php include ("headerInvitat.php")?>
 <h2>Buscar ID de Incidencia</h2>
 <?php
 
@@ -22,7 +22,7 @@ $sentencia->execute();
 $resultado = $sentencia->get_result();
 $incidencia = $resultado->fetch_assoc();
 if (!$incidencia) { 
-    echo '<button class="button button2"><a href="inici.php">Volver</a></button>';
+    echo '<button class="button button2"><a href="index.php">Volver</a></button>';
     echo '<br>';
     exit("No hay resultados para ese ID");
   
@@ -56,7 +56,7 @@ $incidencias = $resultado->fetch_all(MYSQLI_ASSOC);
     </div>
 </div>
 <br><br>
-<button class="button button2"><a href="inici.php">Volver</a></button>
+<button class="button button2"><a href="iniciInvitat.php">Volver</a></button>
 </body>
 </html>
 

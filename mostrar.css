@@ -30,7 +30,11 @@ h1{
     background-color: #929292;
     color: white;
     padding: 30px;
+    position: sticky;
+    top: 0;
 }
+
+
 .incidencia{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;

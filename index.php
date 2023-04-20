@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="ca">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <title>Incidencies Ins.Pedralbes</title>
     <?php include ("includes.php")?>
 </head>
-
 <body>
-<?php include ("header.php")?>
-    <div class="container">
 
-        <h1>Gestio d'incidencies Intitut Pedralbes</h1>
+    <header>
+        <img src="logo.png" alt="logo">
+    </header>
+    <br><br>
+    <h1 class="title">Login</h1>
+    <form method="post" action="login.php">
+    Usuari: <input type="text" name="userid"><br>
+    Contrasenya: <input type="password" name="password"><br>
+    <input type="submit" value="Login">
+    <a class="comvidat" href='iniciInvitat.php'>Entrar com a comvitat</a><br>
+    </form>
 
-        <div class="grid">
-            <div class="grid-header">
-                <span>Usuari</span>
-                <span>Administrador</span>
-            </div>
-            <div class="grid-button">
-                <span><a class="btn btn-secondary" href="insertarincidencia.php">Insertar Incidencia</a></span>
-                <span><a class="btn btn-secondary" href="mostrarincidencies.php">Llistat Incidencies</a></span>
-                <span><a class="btn btn-secondary" href="consultarIncidencia.php">Consultar Incidencia</a></span>
-                <span><a class="btn btn-secondary" href="gestioIncidencia.php">Gestió Incidencia</a></span>
-            </div>
-        </div>
-    </div>
     <?php include ("footer.php")?>
 </body>
 
